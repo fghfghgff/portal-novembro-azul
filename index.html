@@ -10,48 +10,132 @@
     <header>
         <div>🎗️ Portal Novembro Azul</div>
         <nav>
-            <a href="">fdfdf</a>
-            <a href="">fdfdf</a>
-            <a href="">fdfdf</a>
-            <a href="">fdfdf</a>
+            <a href="#indicadores">Informações</a>
+            <a href="#tabela">Exames</a>
+            <a href="#cuidados">Cuidados</a>
+            <a href="#agendar">Agendar</a>
         </nav>
     </header>
     <div class="content">
-        <h1>Painel de Indicadores de Saúde</h1>
+        <h1 id="indicadores">Painel de Indicadores de Saúde</h1>
         <div class="card-container">
-            <div class="card" id="1">
-                Homens Diagnosticados
+            <div class="card">
+                <p class="card-title">Homens Diagnosticados</p>
+                <p class="card-data">4.567e+352</p>
             </div>
-            <div class="card" id="1">
-                Chance de Cura Precoce
+            <div class="card">
+                <p class="card-title">Chance de Cura Precoce</p>
+                <p class="card-data">95%</p>
             </div>
-            <div class="card" id="1">
-                Exames Realizados
+            <div class="card">
+                <p class="card-title">Exames Realizados</p>
+                <p class="card-data">9</p>
             </div>
-            <div class="card" id="1">
-                Unidades de Atendimento
+            <div class="card">
+                <p class="card-title">Unidades de Atendimento</p>
+                <p class="card-data">9.99e+98435</p>
             </div>
         </div>
-        <h1>Tabela de Agendamento & Triagem</h1>
+        <h1 id="tabela">Tabela de Agendamento & Triagem</h1>
         <table>
             <thead>
                 <tr>
                     <th>Horário</th>
                     <th>Exame</th>
                     <th>Sala</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Horário</td>
-                    <td>Exame</td>
-                    <td>Sala</td>
+                    <td>08:00</td>
+                    <td>Consulta Urológica</td>
+                    <td>Sala 101</td>
+                    <td><div class="badge realizado"></div></td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td>Exame de PSA</td>
+                    <td>Laboratório A</td>
+                    <td><div class="badge realizado"></div></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">09:01</td>
+                    <td>Exame de PSA</td>
+                    <td>Laboratório B</td>
+                    <td><div class="badge urgente"></div></td>
+                </tr>
+                <tr>
+                    <td>Consulta Urológica</td>
+                    <td>Sala 9435</td>
+                    <td><div class="badge agendado"></div></td>
+                </tr>
+                <tr>
+                    <td>Consulta Urológica</td>
+                    <td>Sala ⅗</td>
+                    <td><div class="badge urgente"></div></td>
+                </tr>
+                <tr>
+                    <td>10:09</td>
+                    <td colspan="3">Cancelado</td>
+                </tr>
+                <tr>
+                    <td>16:58</td>
+                    <td>Exame de PSA</td>
+                    <td>Laboratório Z</td>
+                    <td><div class="badge agendado"></div></td>
+                </tr>
+                <tr>
+                    <td>23:59</td>
+                    <td>Consulta Urológica</td>
+                    <td>Sala -1</td>
+                    <td><div class="badge urgente"></div></td>
                 </tr>
             </tbody>
         </table>
+        <h1 id="cuidados">Cuidados & Prevenção</h1>
+        <div class="card-container2">
+            <div class="card">
+                <p class="card-title">PSA</p>
+                <p class="card-text">O Antígeno Prostático Específico é uma enzima produzida pelas células da próstata.</p>
+            </div>
+            <div class="card">
+                <p class="card-title">Toque Retal</p>
+                <p class="card-text">O toque retal é um exame físico rápido, simples e indolor para diagnosticar o câncer de próstata.</p>
+            </div>
+            <div class="card">
+                <p class="card-title">Hábitos Saudáveis</p>
+                <p class="card-text">Alimentação balanceada, controle do peso corporal, exercícios físicos e acompanhamento médico.</p>
+            </div>
+            <div class="card">
+                <p class="card-title">Diagnóstico Precoce</p>
+                <p class="card-text">É a melhor estratégia para garantir altas taxas de cura, que podem chegar a 90% a 95%.</p>
+            </div>
+        </div>
+        <h1 id="agendar">Agendamento</h1>
+        <form>
+            <div class="form-group">
+                <label>Nome:</label>
+                <br>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <br>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>CPF:</label>
+                <br>
+                <input type="text">
+            </div>
+            <button type="submit">Confirmar</button>
+        </form>
     </div>
     <footer>
-        
+        <div>🎗️ Portal Novembro Azul</div>
+        <p>Previna-se do câncer de próstata</p>
+        <div>2026</div>
     </footer>
 </body>
 </html>
